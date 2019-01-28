@@ -7,6 +7,10 @@ class Number {
     private int _biggest = 0;
     private int _smallest = 0;
 
+    public Number(int input) {
+        _digit = input;
+    }
+
     public boolean Checker(int digit) {
         return digit % 1111 != 0;
     } // returns false if all digits are the same
@@ -48,9 +52,8 @@ class Number {
     }
     public static void main(String[] args) { 
         Scanner scanner = new Scanner(System.in);
-        Number number = new Number();
         System.out.println("Enter your 4 digit number: ");
-        number._digit = scanner.nextInt();
+        Number number = new Number(scanner.nextInt());
 
         if (number.Checker(number._digit)) {
             number.freqList(number._digit);
