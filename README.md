@@ -42,22 +42,22 @@ additional data structure in your algorithm.
      For example, if the given number is 2315, the largest number formed is
      5321 and the smallest number is 1235.
 
-You are not allowed to use any sorting method to sort the digits. You should
-not have if statements to rank the digits. You can consider these restrictions
-as hints on how to solve the problem.  
+    You are not allowed to use any sorting method to sort the digits. You should
+    not have if statements to rank the digits. You can consider these restrictions
+    as hints on how to solve the problem.  
 
 4. This episode involves a problem taken from the online judge website, https://uva.onlinejudge.org/
 If you are looking for challenge, you can create an account and try to solve some other
 problems there. A first step to competitive programming.
 
-RunAround number:
-An N-digit runaround number is characterized as follows:
+    RunAround number:
+    An N-digit runaround number is characterized as follows:
 
-It is an integer with exactly N digits, each of which is between 1 and 9, inclusively.
-The digits form a sequence with each digit telling where the next digit in the sequence occurs. This is done by giving the number of digits to the right of the digit where the next digit in the sequence occurs. If necessary, counting wraps around from the rightmost digit back to the leftmost.
-The leftmost digit in the number is the first digit in the sequence, and the sequence must return to this digit after all digits in the number have been used exactly once.
-No digit will appear more than once in the number.
-For example, consider the number 81362. To verify that this is a runaround number, we use the steps shown below:
+    It is an integer with exactly N digits, each of which is between 1 and 9, inclusively.
+    The digits form a sequence with each digit telling where the next digit in the sequence occurs. This is done by giving the number of digits to the right of the digit where the next digit in the sequence occurs. If necessary, counting wraps around from the rightmost digit back to the leftmost.
+    The leftmost digit in the number is the first digit in the sequence, and the sequence must return to this digit after all digits in the number have been used exactly once.
+    No digit will appear more than once in the number.
+    For example, consider the number 81362. To verify that this is a runaround number, we use the steps shown below:
 
     1. Start with the leftmost digit, 8  1  3  6  2 
     2. Count 8 digits to the right, ending on 6 (note the wraparound)
@@ -65,28 +65,28 @@ For example, consider the number 81362. To verify that this is a runaround numbe
     4. Count 2 digits to the right, ending on 1:
     5. Count 1 digit to the right, ending on 3:
     6. Count 3 digits to the right, ending on 8 (where we began):
-Again for this episode, try to think of the sub-problems and think about how to
-solve each of the sub-problems. I am not expecting you to code the program 
-especially not Python program. 
+    Again for this episode, try to think of the sub-problems and think about how to
+    solve each of the sub-problems. I am not expecting you to code the program 
+    especially not Python program. 
 
-Just think about how many sub-problems are involved here and whetner
-some of the subproblems can be considered at the same time. 
+    Just think about how many sub-problems are involved here and whetner
+    some of the subproblems can be considered at the same time. 
 
-We will have a subsequent episode to consider incremental programming.   
+    We will have a subsequent episode to consider incremental programming.   
 
 5. Given a list of non negative integers, arrange them
 such that they form the largest possible number.
 For example, given [50, 2, 1, 9], the largest formed number is 95021.
 You can sort the integers if you wish.
 
-Check your algorithm with [5, 50, 56]  
+    Check your algorithm with [5, 50, 56]  
 
 6. Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
 
-For example,
-canBalance([1, 1, 1, 2, 1]) → true
-canBalance([2, 1, 1, 2, 1]) → false
-canBalance([10, 10]) → true
+    For example,
+    canBalance([1, 1, 1, 2, 1]) → true
+    canBalance([2, 1, 1, 2, 1]) → false
+    canBalance([10, 10]) → true
 
-This is taken from codingbat.com, another website that provides you with some simple problrms
-for you to practice. You can test your solution by submitting it to the website for the problem Array-3 > canBalance. 
+    This is taken from codingbat.com, another website that provides you with some simple problrms
+    for you to practice. You can test your solution by submitting it to the website for the problem Array-3 > canBalance. 
