@@ -116,34 +116,41 @@ two Scanner objects in your program.
     input are entered using the keyboard. But if you re-direct the input
     from a input file (attached), the program crashes. Why?
 
-``` {Compile the program:   javac TestScanner.java
-  Run without re-direction:    java TestScanner
-       then type in the input
-  Run With re-direction:      java TestScanner  < TScanner1.in
-      and                            java TestScanner < TScanner2.in
-} ```
-
-    Note that when yuou use the re-direction operator '<' you are telling
-    the system to treat the file as the standard input "System.in".
-    You can also use the re-direction operator '>' to treat the file as
-    the standard output "System.out". For example, the command
+    {Compile the program:
+      ```javac TestScanner.java```
+        
+    Run without re-direction: 
+      ```java TestScanner```
+        
+    then type in the input
     
-``` java TestSCanner < TScanner1.in > out1.out```
+    Run With re-direction:
+      ```java TestScanner  < TScanner1.in```    
+      and 
+      ```java TestScanner < TScanner2.in```
+}
 
-will run the program TestSCanner and use the file TScanner1.in
-as System.in and out1.out as System.out. You can then check
-whether your program produces the correct output by comparing
-the standard output TScanner1.out with the output produced by
-your program using the command
+   Note that when yuou use the re-direction operator '<' you are telling
+   the system to treat the file as the standard input "System.in".
+   You can also use the re-direction operator '>' to treat the file as
+   the standard output "System.out". For example, the command
+    
+     ```java TestSCanner < TScanner1.in > out1.out```
 
-```   diff TScanner1.out out1.out```
+   will run the program TestSCanner and use the file TScanner1.in
+   as System.in and out1.out as System.out. You can then check
+   whether your program produces the correct output by comparing
+   the standard output TScanner1.out with the output produced by
+   your program using the command
+
+      ```diff TScanner1.out out1.out```
    
-if the command return nothing, it means the two files are exactly
+   if the command return nothing, it means the two files are exactly
     the same. Hence your program passed this test.
 
-Try to find out the reason and make sure that you dont do it during
+   Try to find out the reason and make sure that you dont do it during
     any of the programs that you have to submit to codecrunch. That
     is, dont do this during sit-in lab and PE because codecrunch execute
     your program with re-direction.
-
-By the way, eof in unix is CTRL-d. 
+   
+   By the way, eof in unix is CTRL-d. 
