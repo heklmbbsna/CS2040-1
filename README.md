@@ -154,3 +154,80 @@ two Scanner objects in your program.
     your program with re-direction.
    
    By the way, eof in unix is CTRL-d. 
+
+***
+
+8. Another scanner problem
+    This episode shows you another possible problem when using
+    scanner to read input.
+    The attached program is supposed to read a matrix of integers
+    and then read a line from the standard input.
+    But even though there is a line after the matrix, the program read
+    an empty line when a textfile (attached) is re-directed as standard
+    input. When you enter the input on the keyboard, the program does
+    not wait for you to enter the line.
+    Again, try to figure out what is happening and try to avoid this
+    problem in future lab.
+
+    There are three other things to note:
+    1. We can have 2 Scanner objects if the input streams are different.
+    2. The input stream can be any valid stream of characters.
+    3. See the use of println statements to indicate when the problem
+    occurred. A form of debugging. 
+    4. You should try to understand how the methods in the Scanner
+    class work so that you know when and how to use them in your
+    programs.  
+    
+***
+
+9. What's wrong with this
+```java
+public class Test {
+     private int a = 0, b = 0;
+
+     private int add() {
+          return a + b;
+     }
+
+     public static void main(String[] args) {
+           a = 2;
+           b = 3;
+           System.out.println(add());
+      }
+}  
+// What is wrong with the above class? How to make it right?
+```
+
+***
+
+10. What's wrong with this (part 2)
+    In this episode, you should download the two attached files into
+    the same working directory.
+    First compile ArrayList.java then TestArrayList.java
+    You will receive a syntax error saying that the add() method cannot
+    be found in the ArrayList class even though you have imported the
+    java.util.* in TestArrayList.java. Note that ArrayList is a class in the
+    package java.util
+
+    Explain what is wrong and share with us what you have to do to finally
+    get it compile.
+
+    Hopefully it would help you when you get the problem in future. 
+    
+***
+
+11. Magic square
+    For this episode, please refer the [this page] (http://www.math.hmc.edu/funfacts/ffiles/10001.4-8.shtml)
+    there is an algorithm to generate a N*N magic square where N is an odd number.
+
+    Write a java program to implement the algorithm.  
+    
+***
+
+12. 2048
+    This episode is taken from a CS1020 sit-in lab (later become take-home lab)
+
+    One important thing is to practice modular and incremental programming.
+    Identify the common thing to do and then create a method to take care
+    of it. Then see how the original problem can be reduced into the common
+    thing. Then try to take care of each of these sub-problems. 
