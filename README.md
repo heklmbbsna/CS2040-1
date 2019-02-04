@@ -1,44 +1,53 @@
 # CS2040: Data structures and algorithms
 Compilation of CS2040 forum "Soap Operas" (read: problem sets)
 
-1. To begin our soap opera, we are interested to find out
-the number of days betwen two give dates. This could be
-used by some banking applications for calculating daily
-based interest, etc. The input are two dates in the format
-ddmmyyyy. 
+1. Difference between dates
+
+    To begin our soap opera, we are interested to find out
+    the number of days betwen two give dates. This could be
+    used by some banking applications for calculating daily
+    based interest, etc. The input are two dates in the format
+    ddmmyyyy. 
+    
     What you need to do is to identify all the sub-problems
-and then describe your solution to each sub-problem. Your
-solution should not make use of any library routines in any
-programming language. That is, you have to do everything
-yourself.
+    and then describe your solution to each sub-problem. Your
+    solution should not make use of any library routines in any
+    programming language. That is, you have to do everything
+    yourself.
+    
     Please do not be satisfied with the first idea that comes
-to your mind. Think carefully and you may find a better
-solution. In particular, if your solution has many nested if
-statement, you should try to find a better solution.
+    to your mind. Think carefully and you may find a better
+    solution. In particular, if your solution has many nested if
+    statement, you should try to find a better solution.
+    
     You do not need to implement your algorithm. Just pseudo
-code will do.  
+    code will do.  
      As I said during the lecture, you must have a complete
-algorithm before you start coding.  
+    algorithm before you start coding.  
 
 ***
 
-2. Assume that you are working as a customer service officer for a company.
-Each morning you are given an array of great number (billions) of integers
-and throughout the day, your customers will call in and ask you to give them
-the sum of all the integers between index i and j. Most of the customers are
-very impatient. They expect to get an answer instantly. So you have to come
-out with a program to help you do that. But before you implement the program,
-you were told to first write an algorithm that accepts two integers, i and j, which
-are the indices of the array and find the sum of all the numbers from index i to
-index j, inclusive.For example, if the array contains {2, 1, 3, 5, 6, 4, 7, 8, 9, 10),
-given 2 and 7 as i and j respectively, your algorithm should answer 33.  
-Adding the numbers each time a user makes a query is considered very inefficient.
-Devise an algorithm so that the queries can be answered efficiently. You may use
-additional data structure in your algorithm.  
+2. Efficient sum query
+
+    Assume that you are working as a customer service officer for a company.
+    Each morning you are given an array of great number (billions) of integers
+    and throughout the day, your customers will call in and ask you to give them
+    the sum of all the integers between index i and j. Most of the customers are
+    very impatient. They expect to get an answer instantly. So you have to come
+    out with a program to help you do that. But before you implement the program,
+    you were told to first write an algorithm that accepts two integers, i and j, which
+    are the indices of the array and find the sum of all the numbers from index i to
+    index j, inclusive.For example, if the array contains {2, 1, 3, 5, 6, 4, 7, 8, 9, 10),
+    given 2 and 7 as i and j respectively, your algorithm should answer 33.  
+    Adding the numbers each time a user makes a query is considered very inefficient.
+    Devise an algorithm so that the queries can be answered efficiently. You may use
+    additional data structure in your algorithm.  
 
 ***
 
-3. Given a 4-digits number, do the following:
+3. Biggest number
+
+    Given a 4-digits number, do the following:
     1. check that at least one of the digit is different from the other three.
      For example, 1333 is good but 3333 is not valid.
     2. Use the 4 digits from the original number to form the largest number.
@@ -52,9 +61,11 @@ additional data structure in your algorithm.
 
 ***
 
-4. This episode involves a problem taken from the online judge website, https://uva.onlinejudge.org/
-If you are looking for challenge, you can create an account and try to solve some other
-problems there. A first step to competitive programming.
+4. Run about number
+
+    This episode involves a problem taken from the online judge website, https://uva.onlinejudge.org/
+    If you are looking for challenge, you can create an account and try to solve some other
+    problems there. A first step to competitive programming.
 
     RunAround number:
     An N-digit runaround number is characterized as follows:
@@ -82,16 +93,20 @@ problems there. A first step to competitive programming.
 
 ***
 
-5. Given a list of non negative integers, arrange them
-such that they form the largest possible number.
-For example, given [50, 2, 1, 9], the largest formed number is 95021.
-You can sort the integers if you wish.
+5. Biggest integer
+
+    Given a list of non negative integers, arrange them
+    such that they form the largest possible number.
+    For example, given [50, 2, 1, 9], the largest formed number is 95021.
+    You can sort the integers if you wish.
 
     Check your algorithm with [5, 50, 56]  
 
 ***
 
-6. Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
+6. Balance array
+
+    Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is               equal to the sum of the numbers on the other side.
 
     For example,
     canBalance([1, 1, 1, 2, 1]) → true
@@ -103,8 +118,10 @@ You can sort the integers if you wish.
 
 ***
 
-7. This episode shows you a possible problem when you try to create
-two Scanner objects in your program. 
+7. Scanner problem
+
+    This episode shows you a possible problem when you try to create
+    two Scanner objects in your program. 
 
     The program in the attached file is to read in an integer N (1 or 2) .
     if N = 1, it will call the first method to read another integer M and
@@ -158,6 +175,7 @@ two Scanner objects in your program.
 ***
 
 8. Another scanner problem
+
     This episode shows you another possible problem when using
     scanner to read input.
     The attached program is supposed to read a matrix of integers
@@ -201,6 +219,7 @@ public class Test {
 ***
 
 10. What's wrong with this (part 2)
+
     In this episode, you should download the two attached files into
     the same working directory.
     First compile ArrayList.java then TestArrayList.java
@@ -217,6 +236,7 @@ public class Test {
 ***
 
 11. Magic square
+
     For this episode, please refer the [this page] (http://www.math.hmc.edu/funfacts/ffiles/10001.4-8.shtml)
     there is an algorithm to generate a N*N magic square where N is an odd number.
 
@@ -225,6 +245,7 @@ public class Test {
 ***
 
 12. 2048
+
     This episode is taken from a CS1020 sit-in lab (later become take-home lab)
 
     One important thing is to practice modular and incremental programming.
