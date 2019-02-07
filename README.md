@@ -252,3 +252,47 @@ public class Test {
     Identify the common thing to do and then create a method to take care
     of it. Then see how the original problem can be reduced into the common
     thing. Then try to take care of each of these sub-problems. 
+
+***
+
+13. Candy crush
+
+    I discourage people on wasting time playing computer games
+    especially those that are very addictive. Candy crush is one of 
+    them.
+    So this episode is not asking you to play the game but rather
+    writing a program that will perform one of the funtionalities in the
+    game.
+    Again, this was one of the previous sit-in lab problem. So take 
+    this as an extra practice if you have time.
+
+***
+
+14. LinkedList interview
+
+    When you go for IT job interview, the interviewers might ask you this kind of questions.
+
+    Given two linked lists which have some common nodes at the end, write a method to find and return a linked list that contains those common nodes. For example, in the following diagram, your method should return a linked list containing the last three nodes.
+    
+    [diagram](https://ivle.nus.edu.sg/v1/ckeditor/getFile.ashx?id=af295c2d-fb03-49fe-94e7-99e9a35ee389&n=image(17).png)
+
+    Assume that the values in the two linked lists are distinct integers sorted in ascending order. Complete the following method.
+
+    You are not allowed to use any additional data structure in your solution but some temporary variables are allowed.
+    ```
+    /* preCond: head1 and head2 point to two non-empty linked lists with values sorted in ascending order.
+        postCond: return a reference pointing to the first node of the common nodes of
+                         the two given lists. If there is no common nodes, return null */ 
+    ```
+
+***
+
+15. LinkedList interview part II
+
+    This is a variation of Episode 14. In this episode, the values in the linkedlist
+    are not distinct and not sorted but you are allowed to use two other data
+    structures in your solution. You can only traverse the linkedlists once and
+    you are not allowed to go through what you stored in the data structures
+    more than once.
+
+    Remember you are to return the reference of the head of the common nodes.
